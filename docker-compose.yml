@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   app:
-    image: agentzhao/reactdocker:latest
+    image: reactdocker:latest
     container_name: reactdocker
     build:
       context: ./
