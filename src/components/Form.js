@@ -20,7 +20,7 @@ class Form extends React.Component {
   handleSubmit(event) {
     // console.log(process.env.REACT_APP_API_KEY);
     const configuration = new Configuration({
-      apiKey: process.env.REACT_APP_API_KEY,
+      apiKey: "",
     });
     const openai = new OpenAIApi(configuration);
     // console.log(this.state);
@@ -103,7 +103,7 @@ class Form extends React.Component {
               <div class="mb-6">
                 <button
                   type="submit"
-                  class="py-4 px-2 w-full text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
+                  class="py-4 px-2 w-full text-white bg-yellow-500 rounded-md focus:bg-yellow-600 focus:outline-none"
                 >
                   Generate Resume
                 </button>
